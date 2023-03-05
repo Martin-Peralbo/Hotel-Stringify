@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>Hotel Stringify</title>
+</head>
+
+<body>
+    <header>
+        <h1>Hotel Stringify</h1>
+    </header>
+    <Main>
+        <form id="FormularioReserva">
+            <section class="datosPersonales">
+                <div class="tituloDatosPersonales">
+                    <h2>Datos Personales</h2>
+                </div>
+                <div class="grillaDatosPersonales">
+                    <p><label for="Nombre">Nombre: </label><input type="text" name="Nombre" required></p>
+                    <p><label for="Apellido">Apellido: </label><input type="text" name="Apellido" required></p>
+                    <p><label for="Edad">Edad: </label><input type="number" name="Edad" required></p>
+                    <p><label for="DNI">DNI: </label><input type="text" name="DNI" required></p>
+                    <p><label for="Telefono">Telefono: </label><input type="tel" name="Telefono" required></p>
+                    <p><label for="Mail">Mail: </label><input type="email" name="Mail" required></p>
+                </div>
+            </section>
+            <section class="metodoDePago">
+                <h2>Metodo de Pago</h2>
+                <p>Seleccione el metodo de pago e ingrese el dia de llegada al hotel</p>
+                <select name="MetodoPago" id="" required>
+                    <option value="Efectivo">Efectivo</option>
+                    <option value="Tarjeta">Tarjeta</option>
+                </select>
+                <p><label for="Fecha">Fecha de ingreso: </label><input type="date" name="Fecha" required></p>
+                <p>Cantidad de noches: <input type="number" name="Noches" required></p>
+            </section>
+            <section class="reservas">
+                <div class="tituloReserva">
+                    <h2>Reserva</h2>
+                </div>
+                <div class="grillaHabitaciones">
+                    <div class="tarjetaDeHabitacion">
+                        <div class="imagenDeHabitacion">
+                            <img src="img/normal-simple.jpg" alt="Normal Simple">
+                        </div>
+                        <div class="textoDeHabitacion">
+                            <h3>Habitacion normal cama simple</h3>
+                            <div>
+                                <div>
+                                    <h4>$500</h4>
+                                </div>
+                                <label for="Habitacion 1">Seleccionar</label>
+                                <input type="radio" name="habitacion" id="" value="normal-simple" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tarjetaDeHabitacion">
+                        <div class="imagenDeHabitacion">
+                            <img src="img/normal-doble.jpg" alt="Normal Doble">
+                        </div>
+                        <div class="textoDeHabitacion">
+                            <h3>Habitacion normal cama doble</h3>
+                            <div>
+                                <div>
+                                    <h4>$700</h4>
+                                </div>
+                                <label for="Habitacion 1">Seleccionar</label>
+                                <input type="radio" name="habitacion" id="" value="normal-doble" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tarjetaDeHabitacion">
+                        <div class="imagenDeHabitacion">
+                            <img src="img/suite-simple.jpg" alt="Suite Simple">
+                        </div>
+                        <div class="textoDeHabitacion">
+                            <h3>Habitacion suite cama simple</h3>
+                            <div>
+                                <div>
+                                    <h4>$1000</h4>
+                                </div>
+                                <label for="Habitacion 1">Seleccionar</label>
+                                <input type="radio" name="habitacion" id="" value="suite-simple" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tarjetaDeHabitacion">
+                        <div class="imagenDeHabitacion">
+                            <img src="img/suite-doble.jpg" alt="Suite Doble">
+                        </div>
+                        <div class="textoDeHabitacion">
+                            <h3>Habitacion suite cama doble</h3>
+                            <div>
+                                <div>
+                                    <h4>$1500</h4>
+                                </div>
+                                <label for="Habitacion 1">Seleccionar</label>
+                                <input type="radio" name="habitacion" id="" value="suite-doble" >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit">Finalizar Reserva</button>
+            </section>
+        </form>
+    </Main>
+    <footer >
+
+    </footer>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

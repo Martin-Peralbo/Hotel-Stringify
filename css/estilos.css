@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {display: flex;
+justify-content: center;}
+
+header h1 {
+    padding: 40px;
+    font-family: 'Great Vibes', cursive;
+    font-size: 60px;
+    color: #EDD382;
+}
+
+.datosPersonales {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.datosPersonales div h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: #ED6A5A;
+}
+
+.grillaDatosPersonales {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.grillaDatosPersonales p {
+    margin: 10px;
+}
+
+
+.grillaHabitaciones .tarjetaDeHabitacion {
+    width: 615px;
+    height: 600px;
+    border: 2px black solid;
+    margin: 10px;
+}
+
+.grillaHabitaciones .tarjetaDeHabitacion .textoDeHabitacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.grillaHabitaciones .tarjetaDeHabitacion .textoDeHabitacion div {
+    text-align: center;
+    margin: 10px;
+}
+
+.grillaHabitaciones .tarjetaDeHabitacion .textoDeHabitacion h3 {
+    color: #36C9C6;
+    font-family: 'Poppins', sans-serif;
+}
+
+.grillaHabitaciones .tarjetaDeHabitacion .textoDeHabitacion div div h4 {
+    margin: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.grillaHabitaciones .tarjetaDeHabitacion .textoDeHabitacion div div p {
+    font-family: 'Poppins', sans-serif;
+}
+
+.grillaHabitaciones .tarjetaDeHabitacion .textoDeHabitacion div form label {
+    font-family: 'Poppins', sans-serif;
+}
+.metodoDePago {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.metodoDePago h2 {
+    color: #ED6A5A;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.metodoDePago p{
+    padding: 10px;
+}
+
+.reservas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.reservas .tituloReserva h2{
+    margin: 20px;
+    color: #ED6A5A;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+.reservas button {
+    margin: 20px;
+    padding: 20px;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.reservaCliente {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.reservaClienteContenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    width: 500px;
+}
+.reservaClienteContenedor h2 {
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #ED6A5A;
+}
+
+.reservaCliente .textoReserva p {
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+}
