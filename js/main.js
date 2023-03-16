@@ -42,6 +42,34 @@ const cantidadCamas = {
     doble: 'doble'
 }
 
+const grillaDeHabitaciones = document.getElementById('grillaDeHabitaciones');
+const listaHabitaciones= "json/habitaciones.json"
+
+fetch(listaHabitaciones)
+    .then(respuesta => respuesta.json())
+    .then(datos => {
+        datos.forEach (habitacion => {
+            grillaDeHabitaciones.innerHTML +=`
+            <div class="tarjetaDeHabitacion">
+            <div class="imagenDeHabitacion">
+                <img src="img/${habitacion.tiposHabitacion}-${habitacion.cantidadCamas}.jpg" alt="${habitacion.tiposHabitacion} ${habitacion.cantidadCamas}">
+            </div>
+            <div class="textoDeHabitacion">
+                <h3>${habitacion.nombre}</h3>
+                <div>
+                    <div>
+                        <h4>$ ${habitacion.precio}</h4>
+                    </div>
+                    <label for="Habitacion 1">Seleccionar</label>
+                    <input type="radio" name="habitacion" id="" value="${habitacion.tiposHabitacion}-${habitacion.cantidadCamas}" required>
+                </div>
+            </div>
+        </div>`
+        })
+    })
+    .catch (error =>console.log(error))
+    .finally(()=>console.log("Proceso finalizado"))
+
 const normalSimple = new Habitacion(tiposHabitacion.normal, cantidadCamas.simple, 500);
 const normalDoble = new Habitacion(tiposHabitacion.normal, cantidadCamas.doble, 700);
 const suiteSimple = new Habitacion(tiposHabitacion.suite, cantidadCamas.simple, 1000);
@@ -91,10 +119,10 @@ FormularioReserva.addEventListener("submit", function(event) {
 
 function total(reserva) {
     let porcentajeDescuento;
-    if (reserva.pago === "Efectivo") {
+    if (reserva.pago === "Debito") {
         porcentajeDescuento = 10
     }
-    else if (reserva.pago === "Tarjeta") {
+    else if (reserva.pago === "Credito") {
         porcentajeDescuento = 0
     }
     const totalSinDescuentos = reserva.habitacionSeleccionada.precio * reserva.noches;

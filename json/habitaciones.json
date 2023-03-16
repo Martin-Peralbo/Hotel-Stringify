@@ -1,0 +1,6 @@
+[
+    {"nombre": "Habitacion normal cama simple","tiposHabitacion": "normal", "cantidadCamas": "simple", "precio": 500,"id":1},
+    {"nombre": "Habitacion normal cama doble","tiposHabitacion":"normal", "cantidadCamas": "doble", "precio": 700,"id":2},
+    {"nombre": "Habitacion suite cama simple","tiposHabitacion":"suite", "cantidadCamas": "simple", "precio": 1000,"id":3},
+    {"nombre": "Habitacion suite cama doble","tiposHabitacion":"suite", "cantidadCamas": "doble", "precio": 1500,"id":4}
+]

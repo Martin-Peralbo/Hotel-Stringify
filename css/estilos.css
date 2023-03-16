@@ -130,7 +130,7 @@ header h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 75vh;
+    
     width: 500px;
 }
 .reservaClienteContenedor h2 {
@@ -143,4 +143,30 @@ header h1 {
     padding: 20px;
     font-family: 'Poppins', sans-serif;
     text-align: justify;
+}
+
+.contenedorBotones {
+    display: flex;
+}
+
+.contenedorBotones button ,.reservas button{
+    margin: 20px;
+    padding: 15px;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    border: 1px solid black ;
+    box-shadow: 4px 5px 10px 0px rgba(0,0,0,0.75);
+    background: rgb(255,215,0);
+    background: linear-gradient(41deg, rgba(255,215,0,1) 0%, rgba(255,235,128,1) 48%);
+    border-radius: 15px;
+}
+
+.contenedorBotones button:hover, .reservas button:hover {
+    background: rgb(255,235,128);
+    background: linear-gradient(41deg, rgba(255,235,128,1) 0%, rgba(255,215,0,1) 48%);
+}
+
+.contenedorBotones button:active, .reservas button:active {
+    transform: scale(0.98);
 }
